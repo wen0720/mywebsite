@@ -30,7 +30,7 @@ function sassToCss () {
       )
     )
     .pipe(rename('m.css'))
-    .pipe(gulp.dest('./doc/css'))
+    .pipe(gulp.dest('./docs/css'))
 }
 
 function bundleJS () {
@@ -44,14 +44,14 @@ function bundleJS () {
     .pipe(buffer())  // uglify 只支援 buffer，所以先作轉換
     .pipe(uglify())
     .pipe(rename('index.bundle.js')) // 重命名
-    .pipe(gulp.dest('./doc'))
+    .pipe(gulp.dest('./docs'))
 }
 
 function pugToHtml () {
   return gulp.src('index.pug')
     .pipe(pug({ pretty: true }))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('./doc'))
+    .pipe(gulp.dest('./docs'))
 }
 
 function moveImg () {
@@ -60,7 +60,7 @@ function moveImg () {
       jpegRecompress: false,
       mozjpeg:false
     }))
-    .pipe(gulp.dest('./doc/images'))
+    .pipe(gulp.dest('./docs/images'))
 }
 
 function livereload (cb) {
