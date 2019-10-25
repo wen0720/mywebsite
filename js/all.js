@@ -115,6 +115,10 @@ jQuery(document).ready(function($) {
     // });
   });
 
+
+
+
+
   //作品區banner 互換設定
   jQuery(document).ready(function() {
     //電腦向右選
