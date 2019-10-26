@@ -55,7 +55,7 @@ function pugToHtml () {
 }
 
 function moveImg () {
-  return gulp.src('./images/*')
+  return gulp.src(['./images/*', 'favicon.png'])
     .pipe(image({
       jpegRecompress: false,
       mozjpeg:false
