@@ -1,4 +1,4 @@
-//aos 
+//aos
 
 AOS.init({
   offset: 200,
@@ -8,7 +8,7 @@ AOS.init({
 });
 
 
-// 首頁文字特效  
+// 首頁文字特效
 jQuery(document).ready(function($) {
   /* Act on the event */
   function textAnimate(){
@@ -179,7 +179,7 @@ jQuery(document).ready(function($) {
        if(Dx == -1){
           workPrev(event);
        }
-    });    
+    });
   });
 
   //footer
@@ -194,7 +194,7 @@ jQuery(document).ready(function($) {
     }
     phoneAnimate();
   });
-  
+
   //parallax
   jQuery(document).ready(function() {
           var userAgent = navigator.userAgent;
@@ -205,7 +205,7 @@ jQuery(document).ready(function($) {
           var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") < 1 ;
           var isChrome = userAgent.indexOf("Chrome") > -1 ;
           var isIE5 = isIE55 = isIE6 = isIE7 = isIE8 = false;
-        // function broserCheck(){           
+        // function broserCheck(){
         //   // if(isFF){console.log('yy')}
         //   // if(isMaxthon){console.log('ss');}
         //   // if(isOpera){console.log('ss');}
@@ -241,7 +241,7 @@ jQuery(document).ready(function($) {
   //   var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") < 1 ;
   //   var isChrome = userAgent.indexOf("Chrome") > -1 ;
   //   var isIE5 = isIE55 = isIE6 = isIE7 = isIE8 = false;
-     
+
   //   if(isFF){console.log('yy')}
   //   if(isMaxthon){console.log('ss');}
   //   if(isOpera){console.log('ss');}
@@ -250,7 +250,7 @@ jQuery(document).ready(function($) {
   //   if(isIE){console.log('ss');}
   // }
   // firefox();
-  
+
 
 
 

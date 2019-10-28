@@ -56,15 +56,18 @@ $(document).ready(function($) {
 
 //nav下滑動畫
 $(document).ready(function() {
+  function headerScrolleffect () {
+    var nowScroll = $(window).scrollTop();
+    if (nowScroll > 100) {
+    $('nav').addClass('active');
+    }else{$('nav').removeClass('active');}
+  }
+
 $(window).scroll(function(event) {
   /* Act on the event */
-   var nowScroll = $(window).scrollTop();
-   if (nowScroll > 100) {
-    $('nav').addClass('active');
-   }else{
-     $('nav').removeClass('active');
-   }
+  headerScrolleffect()
 });
+headerScrolleffect()
 });
 
 //nav錨點設定

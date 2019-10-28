@@ -65,6 +65,7 @@ function moveImg () {
 
 function livereload (cb) {
   connect.server({
+    host: '0.0.0.0',
     port: 8001,
   })
   cb()
