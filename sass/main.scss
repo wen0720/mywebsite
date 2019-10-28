@@ -33,11 +33,17 @@ body{
 p, span{
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
-   	// font-size:$fontSmall; 
+   	// font-size:$fontSmall;
 }
 img{
 	max-width:100%;
 }
+
+.highlight{
+	background: #fffaa9;
+	cursor: pointer;
+}
+
 /*header*/
 header.banner{
 	height:100vh;
@@ -121,12 +127,12 @@ header.banner{
 				width:130px;
 				position:relative;
 				a{
-					display:block;	
+					display:block;
 					color:$mainColor;
 					font-size:15px;
 					font-weight: 300;
 					padding:40px 0;
-					text-align:center; 					
+					text-align:center;
 					letter-spacing: 1px;
 					&:after{
 						content: "";
@@ -142,7 +148,7 @@ header.banner{
 					}
 				}
 				a:hover:after,a.active:after{
-					width:58%;		
+					width:58%;
 				}
 
 			}
@@ -175,7 +181,7 @@ header.banner{
 				color:#f4e320;
 			}
 			&:hover:after,&.active:after{
-				background-color: rgba(244,227,32,0.8);;		
+				background-color: rgba(244,227,32,0.8);;
 			}
 		}
 		&:after{
@@ -223,7 +229,7 @@ header.banner{
 		.aniTxt:last-child .letters{
 			font-size:16px;
 			padding:12px 0 0;
-			letter-spacing:2px; 
+			letter-spacing:2px;
 			@include phone500(){
 				font-size: 14px;
 			}
@@ -234,7 +240,7 @@ header.banner{
 		background-image: url(../images/bannerCover.png);
 		background-size:cover;
 		position:absolute;
-		bottom:0;
+		bottom:-2px;
 		left:0;
 		right:0;
 		height:168px;
@@ -246,7 +252,7 @@ header.banner{
 
 /*container*/
 .container {
-	background:#fbfbfb;	
+	background:#fbfbfb;
 	// position:relative;
 }
 
@@ -274,7 +280,7 @@ header.banner{
 			font-weight: bold;
 			margin:0 0 3px 0;
 			font-size:$fontSmall;
-			display:inline-block; 
+			display:inline-block;
 		}
 	}
 	.txtbox{
@@ -296,7 +302,7 @@ header.banner{
 		}
 		@include phone480(){
 			padding: 200px 0 0;
-		}			
+		}
 	}
 	.title:after{
 		content:"01";
@@ -321,7 +327,7 @@ header.banner{
 	.txtbox{
 		width:100%;
 		max-width: 830px;
-		padding:0px 40px 180px 20px;	
+		padding:0px 40px 180px 20px;
 		position:relative;
 		@include com1400(){
 			width:56%;
@@ -340,6 +346,9 @@ header.banner{
 		p{
 			@include phone480(){
 				margin:0;
+				&:not(:last-child) {
+					display: inline;
+				}
 			}
 		}
 	}
@@ -365,7 +374,7 @@ header.banner{
 			}
 			@include pad900(){
 				max-width:70%;
-			}	
+			}
 		}
 	}
 }
@@ -450,7 +459,7 @@ header.banner{
 			}
 			h3{
 				font-family:$engFont;
-				font-size:22px;	
+				font-size:22px;
 				letter-spacing:2px;
 				position:relative;
 				&:after{
@@ -466,7 +475,7 @@ header.banner{
 			.txtbox{
 				position:relative;
 				padding:10px 0;
-				// display:table-cell;				
+				// display:table-cell;
 				img{
 					width:90px;
 					vertical-align:middle;
@@ -479,15 +488,15 @@ header.banner{
 				}
 				p{
 					display:inline-block;
-					vertical-align:middle;		
+					vertical-align:middle;
 					width:calc(100% - 94px);
 					font-size:$fontSmall;
 					line-height: 1.8;
-					letter-spacing: 0.15em;	
+					letter-spacing: 0.15em;
 					@include phone480(){
 						line-height: 1.6;
 						margin:0 0 0 10px;
-					}				
+					}
 				}
 			}
 		}
@@ -500,8 +509,8 @@ header.banner{
 	z-index:1;
 	padding:0 0 70px 0;
 	.title{
-		@include pad610(){
-		padding: 0 0 80px 10px;
+		@include pad768(){
+		padding: 0 0 30px 10px;
 		}
 		&:after{
 			content:"03";
@@ -549,7 +558,7 @@ header.banner{
 				}
 			}
 			li.active{
-				display:block;				
+				display:block;
 			}
 		}
 		.btnbox{
@@ -579,7 +588,7 @@ header.banner{
 				}
 				&:hover{
 					transform:translateX(-10px);
-				}	
+				}
 			}
 			a:nth-child(2){
 				position:relative;
@@ -656,6 +665,97 @@ header.banner{
 				}
 
 			}
+		}
+	}
+}
+
+.workList{
+	font-size: 0;
+	margin: 50px 0;
+	ul li {
+		margin: 30px 0;
+		position: relative;
+		@include pad768(){
+			border: 1px solid #ccc;
+    	box-shadow: 10px 10px 0px rgba(233, 233, 233, 1);
+			margin: 50px 0;
+		}
+	}
+	&__content{
+		font-size: 15px;
+		width: 50%;
+		display: inline-block;
+		padding: 0 0 0 30px;
+		vertical-align: middle;
+		@include pad768(){
+			width: 100%;
+			padding: 15px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 95%;
+			background: #f1f1f1;
+			z-index: -1;
+			left: 0;
+			bottom: -20px;
+			@include pad1024(){
+				display: none;
+			}
+		}
+		h3 {
+			font-size:22px;
+			color:#2e2e2e;
+			font-weight: normal;
+			margin: 10px 0;
+		}
+		p{
+			color:#2e2e2e;
+			font-size:$fontSmall;
+			line-height:1.8;
+			margin:15px 0 0;
+		}
+	}
+	&__imgbox{
+		font-size: 15px;
+		width: 40%;
+		display: inline-block;
+		vertical-align: middle;
+		@include pad768(){
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	&__tag{
+		margin: 10px 0;
+		span{
+			font-size: 13px;
+			border-radius: 5px;
+			background: #ccc;
+			color: #444;
+			display: inline-block;
+			padding: 5px;
+			margin: 3px 5px;
+		}
+	}
+	&__btn{
+		border: 1px solid $mainColor;
+    border-radius: 5px;
+		padding: 3px;
+		color: $mainColor;
+		margin: 14px 0 0;
+		display: block;
+		max-width: 80px;
+		text-align: center;
+		font-size: 13px;
+		&:hover{
+			background: $mainColor;
+			color:#fff;
+		}
+		@include pad768(){
+			margin: 14px auto 0;
 		}
 	}
 }
@@ -767,7 +867,7 @@ footer{
 		&.up:after{
 		    animation-name: up;
   			animation-duration: 1.5s;
-  			animation-iteration-count: infinite;	
+  			animation-iteration-count: infinite;
 		}
 	}
 }

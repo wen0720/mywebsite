@@ -13,7 +13,7 @@ AOS.init({
   // 首頁文字特效
 $(document).ready(function($) {
     /* Act on the event */
-    function textAnimate(){
+
       $('.aniTxt .letters').each(function(){
         $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
       });
@@ -35,10 +35,7 @@ $(document).ready(function($) {
           delay: 1000
         });
 
-      };
-
-      textAnimate();
-  });
+});
 
 //下滑離開header時，文字消失，回到區塊，文字出現
   function scrollTopTextAnimate(){
@@ -174,7 +171,7 @@ $(document).ready(function() {
     var nowScroll = $(window).scrollTop();
     $('.about figure').css('transform','translateY('+(-nowScroll/20)+'px)');
     $('.box01.about .title').css('transform','translateY('+(-nowScroll/40)+'px)');
-    $('.box01.work .title').css('transform','translateY('+(nowScroll/40)+'px)');
+    $('.box01.work .title').css('transform','translateY('+(nowScroll/50)+'px)');
     $('.skill').css('background-position-y', nowScroll/20);
     $('header').css('background-position-y', -nowScroll/10);
   });
