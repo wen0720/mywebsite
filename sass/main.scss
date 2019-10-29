@@ -201,20 +201,20 @@ header.banner{
 		margin:-80px 0 0 0;
 		text-align:center;
 		color:$mainColor;
-		// padding:0 20px;
+		padding:0 20px;
 		h1{
 			font-weight: 300;
 			letter-spacing: 6px;
 			span{
 				font-size:50px;
 				@include phone500(){
-					font-size: 38px;
+					font-size: 34px;
 				}
 				@include phone375(){
-					font-size: 35px;
+					font-size: 32px;
 				}
 				@include phone320(){
-					font-size: 31px;
+					font-size: 28px;
 				}
 			}
 		}
@@ -497,6 +497,9 @@ header.banner{
 						line-height: 1.6;
 						margin:0 0 0 10px;
 					}
+					@include phone320(){
+						font-size: 14px;
+					}
 				}
 			}
 		}
@@ -508,6 +511,9 @@ header.banner{
 	position:relative;
 	z-index:1;
 	padding:0 0 70px 0;
+	@include phone480(){
+		padding: 0 0 20px 0;
+	}
 	.title{
 		@include pad768(){
 		padding: 0 0 30px 10px;
