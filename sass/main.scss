@@ -847,6 +847,9 @@ footer{
 			display:block;
 			color:#eee;
 			transition:all 0.35s ease-in-out;
+			animation-name: colorChange;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
 		}
 		span:last-child{
 			padding:10px 0 0 0;
@@ -911,3 +914,14 @@ footer{
   }
 }
 
+@keyframes colorChange {
+	0% {
+		color: #fff;
+	}
+	50% {
+		color: #f4e320;
+	}
+	100% {
+		color: #fff;
+	}
+}
