@@ -2,6 +2,11 @@ import $ from 'jquery'
 import AOS from 'aos'
 import Anime from 'animejs'
 
+$(document).ready(() => {
+  console.log($('html').html())
+  alert($(document))
+})
+
 AOS.init({
     offset: 200,
     duration: 1000,
