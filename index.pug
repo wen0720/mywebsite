@@ -34,8 +34,8 @@ html(lang="zh-TW")
             div(class="slogan")
                 h1(class="aniTxt")
                     span(class="text-wrapper")
-                        span(class="letters") 抱持狂想的前端工程師
-                each text in ['The Best FrontEnd Developer Only For You', '前端工程。前端設計']
+                        span(class="letters") 『』在尋找的前端工程師
+                each text in ['Frontend Developer', '前端工程。前端設計']
                     div(class="aniTxt")
                         span(class="text-wrapper")
                             span(class="letters")= text
@@ -51,8 +51,8 @@ html(lang="zh-TW")
                         img(src="images/me.png" alt="陳玟憲個人照")
                     div.txtbox
                         p 喜歡設計的前端工程師。
-                        p 2 年網頁設計、1 年半前端經歷，工作過程中引發對前端的興趣，開始學習各種前端知識。
-                        p 包含網路理論，JS 原理，到 JS 框架 - Vue、React 等。也會撰寫部落格消化自己的理解。
+                        p 2 年網頁設計、2 年前端經歷，工作過程中引發對前端的興趣，開始學習各種前端知識。
+                        p 包含 JS 原理，到 JS 框架 - Vue 等。偶爾寫部落格消化自己的理解。
                         p 期望在前端與設計的領域，找出創意與現實碰撞的最佳解，持續精進。
                         p.
                           信箱：faition2@gmail.com <br>
@@ -73,17 +73,17 @@ html(lang="zh-TW")
                             h3 Html
                             div(class="txtbox")
                                 img(src="images/icon_html5.png" alt="Html5")
-                                p 了解各標籤語意，切版時產出乾淨的結構，並有效運用每個標籤完成網站應用。也能使用模版語言 Jade 等工具，快速達成任務。
+                                p 了解各標籤語意，切版時產出乾淨的結構，並有效運用每個標籤完成網站應用。也能使用模版語言 pug 等工具達成任務。
                         li(class="item")
                             h3 Css
                             div(class="txtbox")
                                 img(src="images/icon_css3.png" alt="Css3")
-                                p  手刻完成 RWD 切版。善用 CSS 製作動畫，編寫 SCSS 為主，並使用 PostCSS 做後續瀏覽器兼容、壓縮等工作。
+                                p  手刻完成 RWD 切版。善用 CSS 製作動畫，寫 scss/stylus，並使用 PostCSS 做後續瀏覽器兼容等工作。
                         li(class="item")
                             h3 JS 框架
                             div(class="txtbox")
                                 img(src="images/icon_framework.png" alt="Js")
-                                p 前端框架：Vue、Vue router、Vuex 狀態管理。<br>React、React Router、Styled-Components。<br>後端框架：Express。
+                                p 前端框架：Vue、Vue router、Vuex 狀態管理。<br>後端框架：Express。
                         li(class="item")
                             h3 git
                             div(class="txtbox")
@@ -93,7 +93,7 @@ html(lang="zh-TW")
                             h3 PS / AI / XD
                             div(class="txtbox")
                                 img(src="images/icon_adobe.png" alt="sublime")
-                                p 也能獨立完成設計需求。
+                                p 也能完成設計需求。
 
             div#work(class="work box01")
                 div(class="inbox clearfix" data-aos="fade-up" data-aos-once="true")
@@ -104,38 +104,37 @@ html(lang="zh-TW")
                         ul
                             li(class="clearfix")
                                 div(class="workList__imgbox")
-                                    img(src="images/work04.png", alt="KKDAY 官網")
+                                    img(src="images/work05.jpg", alt="老爺官網後台")
                                 div(class="workList__content")
-                                    h3 KKDAY 官網
+                                    h3 老爺酒店後台內容編輯平台
                                     div(class="workList__tag")
-                                        span 電商網站
+                                        span Vue、Vuetify
+                                        span Storybook
+                                        span 獨立開發
+                                    p 角色權限、多圖上傳、元件拖曳等功能、近 70 支 API 串接與管理
+                                    p (內部系統，無對外開放。)
+                            li(class="clearfix")
+                                div(class="workList__imgbox")
+                                    img(src="images/work06.jpg", alt="77 乳加巧克力")
+                                div(class="workList__content")
+                                    h3 77 乳加巧克力
+                                    div(class="workList__tag")
+                                        span 官方網站
+                                        span 獨立開發
+                                    p 專案走後端套版流程。整合 createJS 並視需求撰寫動態，達成客戶要求。
+                                    a(class="workList__btn" rel="noopener noreferrer" href="https://www.77.com.tw" target="_blank") 前往查看
+                            li(class="clearfix")
+                                div(class="workList__imgbox")
+                                    img(src="images/work07.jpg", alt="新聯陽數據平台")
+                                div(class="workList__content")
+                                    h3 新聯陽數據平台
+                                    div(class="workList__tag")
                                         span Vue
-                                        span PHP Codeigniter
-                                    p m 版點數功能頁面、其他維護事宜
-                                    a(class="workList__btn" href="https://m.kkday.com/zh-tw/point" target="_blank") 前往查看
-                            li(class="clearfix")
-                                div(class="workList__imgbox")
-                                    img(src="images/work02.jpg", alt="RE BOSS 店家後台管理系統")
-                                div(class="workList__content")
-                                    h3 RE 活動專案（多個）
-                                    div(class="workList__tag")
-                                        span 活動網站
-                                        span Restful API
-                                        span Canvas
-                                        span Gulp
-                                        span 設計
-                                    p 自行設計並完成公司活動類型網站。串接 Restful API、使用 Canvas 製作遊戲。（活動日期已過，無對外開放。）
-                            li(class="clearfix")
-                                div(class="workList__imgbox")
-                                    img(src="images/work01.jpg", alt="鉑客幣")
-                                div(class="workList__content")
-                                    h3 BIRC 鉑客幣
-                                    div(class="workList__tag")
-                                        span 形象網站
-                                        span Youtube API
-                                        span scss
-                                    p 加密貨幣介紹網站。主要負責前端畫面實作，scss 切版、畫面規劃。 Youtube Player api、Chart.js。
-                                    a(class="workList__btn" href="https://birc.io" target="_blank") 前往查看
+                                        span Google Map api
+                                        span ECharts
+                                    p 2018 年上線。負責維運與新功能開發。串接 Google Map api 依座標經緯度顯示數據，ECharts 開發多種圖表
+                                    p (內部系統，無對外開放。)
+                                    //- a(class="workList__btn" rel="noopener noreferrer" href="https://birc.io" target="_blank") 前往查看
                             //- li(class="clearfix")
                             //-     div(class="workList__imgbox")
                             //-         img(src="images/work03.jpg", alt="RE BOSS 店家後台管理系統")
@@ -188,15 +187,15 @@ html(lang="zh-TW")
                             a(href="https://medium.com/@faition2" target="_blank")
                                 img(src="images/icon_medium.png")
                                 span 逛逛 medium
-                        li
-                            a(href="https://www.facebook.com/profile.php?id=100001679700319" target="_blank")
+                        //- li
+                            //- a(href="https://www.facebook.com/profile.php?id=100001679700319" target="_blank")
                                 img(src="images/icon_fb.png")
                                 span 翻翻臉書
 
         footer
             div(class="inbox")
-                a.up(href="https://github.com/wen0720" target="_blank")
+                a(href="https://github.com/wen0720" target="_blank")
                     span 點我前往github
-                    span Best Web Developer You Can't Miss
+                    span Web Frontend Developer You Can't Miss
 
         script(src="index.bundle.js")

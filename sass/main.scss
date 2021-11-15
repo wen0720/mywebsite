@@ -262,7 +262,7 @@ header.banner{
 	.title{
 		padding:100px 0 0 20px;
 		color:$mainColor;
-		transition:all 1s ease-in-out;
+		// transition:all 1s ease-in-out;
 		@include com1400(){
 			padding: 100px 0 0 10px;
 		}
@@ -356,7 +356,7 @@ header.banner{
 		position:absolute;
 		right:0px;
 		top:-40px;
-		transition:all 1.5s ease-in-out;
+		// transition:all 1.5s ease-in-out;
 		@include com1200(){
 			right:-40px;
 			text-align: right;
@@ -417,12 +417,13 @@ header.banner{
 	padding:70px 0;
 	background: url(../images/bg_skill.jpg) center;
 	background-size: cover;
-	background-attachment:fixed;
 	color:#fff;
+	background-attachment:fixed;
 	@include com1400{
 		padding: 40px 0;
 	}
 	@include phone480{
+		background-attachment: initial;
 		padding: 20px 0;
 	}
 	.title{
@@ -818,17 +819,17 @@ header.banner{
 				margin-left: 40px;
 			}
 		}
-		&:after{
-			content: "";
-		    width: 1px;
-		    height: 80px;
-		    background: #cacaca;
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    right: 0;
-		    margin: 0 auto;
-		}
+		// &:after{
+		// 	content: "";
+		//     width: 1px;
+		//     height: 80px;
+		//     background: #cacaca;
+		//     position: absolute;
+		//     top: 0;
+		//     left: 0;
+		//     right: 0;
+		//     margin: 0 auto;
+		// }
 	}
 }
 
